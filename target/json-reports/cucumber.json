@@ -1,0 +1,158 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "common steps for place order",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12349929900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Navigate to url \u0027http://automationexercise.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://automationexercise.com\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.uiSteps.Register_user_Steps.navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35902500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify that home page is visible successfully",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Register_user_Steps.verify_that_home_page_is_visible_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-02T19:05:31.593Z",
+        "line": 52,
+        "name": "TC_22 Add to cart from Recommended items",
+        "description": "",
+        "id": "cart-function;tc-22-add-to-cart-from-recommended-items",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2904336700,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Scroll to bottom of page",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Carts_Steps.scrollToBottomOfPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130650900,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Verify \u0027RECOMMENDED ITEMS\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027RECOMMENDED ITEMS\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.uiSteps.Register_user_Steps.verifyNewUserSignupIsVisible(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6188275800,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Click on Add To Cart on Recommended product",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Carts_Steps.clickOnAddToCartOnRecommendedProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1127362700,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Click Continue Shopping button",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Carts_Steps.clickContinueShoppingButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24563603700,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Click on View Cart button",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Carts_Steps.clickOnViewCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64662900,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Verify that product is displayed in cart page",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Carts_Steps.verifyThatProductIsDisplayedInCartPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 762403300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Close driver",
+            "match": {
+              "location": "stepdefinitions.uiSteps.Register_user_Steps.closeDriver()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart"
+          }
+        ]
+      }
+    ],
+    "name": "Cart Function",
+    "description": "",
+    "id": "cart-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/uiFeatures/Cart.feature",
+    "tags": []
+  }
+]
