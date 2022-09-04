@@ -103,6 +103,7 @@ public class SignUpPage extends CommonPageElements{
     @FindBy(xpath = "//*[@data-qa=\"continue-button\"]")
     public WebElement continueButton;
 
+    public String userAddress;
     public void registerUser(){
         Faker faker=new Faker();
         Login_SignupPage login_signupPage=new Login_SignupPage();
@@ -121,7 +122,10 @@ public class SignUpPage extends CommonPageElements{
         Driver.waitAndSendText(firstNameTexBox,faker.name().firstName(),2);
         Driver.waitAndSendText(lastNameTexBox,faker.name().lastName(),2);
         Driver.waitAndSendText(companyTexBox,faker.company().name(),2);
-        Driver.waitAndSendText(address1TexBox,faker.address().fullAddress(),2);
+
+        userAddress=faker.address().fullAddress();
+
+        Driver.waitAndSendText(address1TexBox,userAddress,2);
         Driver.waitAndSendText(address2TexBox,faker.address().secondaryAddress(),2);
         Driver.selectByValue(countryDropDown,"Canada");
 

@@ -8,6 +8,8 @@ import pages.*;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import java.io.File;
+
 public class PlaceOrder_Steps {
 
     HomePage homePage=new HomePage();
@@ -83,5 +85,52 @@ public class PlaceOrder_Steps {
     public void fillEmailPasswordAndClickLoginButton() {
         login_signupPage.login();
         Driver.getDriver().navigate().refresh();
+    }
+
+    @Then("Verify that the delivery address is same address filled at the time registration of account")
+    public void verifyThatTheDeliveryAddressIsSameAddressFilledAtTheTimeRegistrationOfAccount() {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains(signUpPage.userAddress));
+        Driver.wait(1);
+    }
+
+    @Then("Verify that the billing address is same address filled at the time registration of account")
+    public void verifyThatTheBillingAddressIsSameAddressFilledAtTheTimeRegistrationOfAccount() {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains(signUpPage.userAddress));
+    }
+
+    @And("Click Download Invoice button and verify invoice is downloaded successfully.")
+    public void clickDownloadInvoiceButtonAndVerifyInvoiceIsDownloadedSuccessfully() {
+        Driver.waitAndClick(paymentPage.downloadInvoiceBtn,3);
+        Driver.wait(5);
+        Assert.assertTrue(isFileDownloaded("invoice"));
+
+    }
+
+    public static Boolean isFileDownloaded(String fileName) {
+        boolean flag = false;
+        //paste your directory path below
+        //eg: C:\\Users\\username\\Downloads
+        String dirPath = "C:\\Users\\admin\\Downloads";
+        File dir = new File(dirPath);
+        File[] files = dir.listFiles();
+        if (files.length == 0 || files == null) {
+            System.out.println("The directory is empty");
+            flag = false;
+        } else {
+            for (File listFile : files) {
+                if (listFile.getName().contains(fileName)) {
+                    System.out.println(fileName + " is present");
+                    flag = true;
+                    break;
+                }else{
+                    flag = false;
+                }
+
+            }
+        }
+        if(flag==false){
+            System.out.println(fileName + " is not present");
+        }
+        return flag;
     }
 }
