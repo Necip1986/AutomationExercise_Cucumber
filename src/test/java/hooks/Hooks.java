@@ -27,7 +27,7 @@ public class Hooks {
         spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("api_url")).build();
     }
 
-    @After (value = "@focus")
+    @After (value = "@login")
     public void tearDown(Scenario scenario) throws IOException {
 
 

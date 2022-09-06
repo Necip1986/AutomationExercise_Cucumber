@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = {"stepdefinitions","hooks"}, //MUST
-        tags = "@usersApi",
+        tags = "@placeOrder",
         dryRun = false,
         monochrome = true
 

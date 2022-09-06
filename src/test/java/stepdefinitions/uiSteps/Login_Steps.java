@@ -22,13 +22,19 @@ public class Login_Steps {
         Assert.assertTrue(login_signupPage.loginToYourAccountMessage.isDisplayed());
     }
 
+    @Given("Enter correct email address and password {string} , {string}")
+    public void enterCorrectEmailAddressAndPassword(String email, String password) {
+        Driver.waitAndSendText(login_signupPage.emailTextBoxForLogin, email,2);
+        Driver.waitAndSendText(login_signupPage.passwordTextBox, password,2);
+
+    }
+
     @Given("Enter correct email address and password")
     public void enterCorrectEmailAddressAndPassword() {
         Driver.waitAndSendText(login_signupPage.emailTextBoxForLogin,
-                                ConfigReader.getProperty("valid_email"),2);
+                ConfigReader.getProperty("valid_email"),2);
         Driver.waitAndSendText(login_signupPage.passwordTextBox,
-                                ConfigReader.getProperty("valid_password"),2);
-
+                ConfigReader.getProperty("valid_password"),2);
     }
 
     @And("Click login button")
@@ -61,6 +67,7 @@ public class Login_Steps {
     public void verifyThatUserIsNavigatedToLoginPage() {
         Assert.assertTrue(Driver.getDriver().getPageSource().contains("Login to your account"));
     }
+
 
 
 }

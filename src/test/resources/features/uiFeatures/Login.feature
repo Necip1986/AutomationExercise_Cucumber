@@ -7,12 +7,19 @@ Feature: Login function
     Then Verify -Login to your account- is visible
 
 
-  Scenario: Login User with correct email and password
-    Given Enter correct email address and password
+
+  Scenario Outline: Login User with correct email and password
+    Given Enter correct email address and password "<email>" , "<password>"
     And Click login button
     Then Verify that -Logged in as username- is visible
     When Click Delete Account button
     Then Verify that 'ACCOUNT DELETED!' is visible and click Continue button
+    And Close driver
+    Examples:
+      | email                  | password |
+      | mehmet762946@gmail.com | ahmet    |
+      | mehmet1234@gmail.com   | ahmet    |
+      | adnan1234@gmail.com    | adna    |
 
 
   Scenario: Login User with incorrect email and password
