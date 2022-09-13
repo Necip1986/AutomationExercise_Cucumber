@@ -166,7 +166,9 @@ public class Carts_Steps {
     public void scrollToBottomOfPage() {
         ReusableMethods.hover(homePage.recommendedItemsHeader);
         Driver.wait(2);
+
     }
+    private int ne=0;
 
 
     @And("Click on Add To Cart on Recommended product")

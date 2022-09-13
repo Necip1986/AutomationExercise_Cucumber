@@ -22,6 +22,7 @@ Feature: Login function
       | adnan1234@gmail.com    | adna    |
 
 
+
   Scenario: Login User with incorrect email and password
     Given Enter incorrect email address and password
     And Click login button

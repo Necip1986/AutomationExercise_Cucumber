@@ -1,6 +1,5 @@
 Feature: Users api
 
-
   Scenario: Get single user
     Given set the necessary path params
     Given send get request for single user
