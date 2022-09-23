@@ -22,12 +22,12 @@ public class Hooks {
 
 
     public static RequestSpecification spec;
-    @Before(value = "@usersApi")
+    @Before(value = "@Demo")
     public void setUpApi(){
         spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("api_url")).build();
     }
 
-    @After (value = "@login")
+    @After (value = "@Demo")
     public void tearDown(Scenario scenario) throws IOException {
 
 

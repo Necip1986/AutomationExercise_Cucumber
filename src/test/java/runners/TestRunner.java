@@ -1,7 +1,9 @@
 package runners;
 
+import hooks.StaticWork;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import stepdefinitions.uiSteps.Carts_Steps;
 
@@ -19,18 +21,15 @@ import stepdefinitions.uiSteps.Carts_Steps;
         },
         features = "./src/test/resources/features",//MUST
         glue = {"stepdefinitions","hooks"}, //MUST
-        tags = " @login",
+        tags = " @Demo",
         dryRun = false,
         monochrome = true
 
 )
 public class TestRunner {
 
-        public static void main(String[] args) {
-                System.out.println("merhaba");
-                Carts_Steps a=new Carts_Steps();
 
-        }
+        
 
 
 
