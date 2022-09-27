@@ -26,10 +26,14 @@ public class ContactUs_Steps {
 
     @Given("Enter name, email, subject and message")
     public void enterNameEmailSubjectAndMessage() {
+
         Driver.waitAndSendText(contactUsPage.nameTxtBox,faker.name().firstName(),2);
         Driver.waitAndSendText(contactUsPage.emailTxtBox,faker.internet().emailAddress(),2);
         Driver.waitAndSendText(contactUsPage.subjectTxtBox,faker.book().title(),2);
         Driver.waitAndSendText(contactUsPage.messageTxtArea,faker.ancient().hero(),2);
+
+
+
     }
 
     @And("Upload file")

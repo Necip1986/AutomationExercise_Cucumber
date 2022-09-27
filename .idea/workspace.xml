@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585f7dac-e49c-4cfb-b5cd-4ffc6167981f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="585f7dac-e49c-4cfb-b5cd-4ffc6167981f" name="Changes" comment="Demo feature added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/Carts_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/Carts_Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/ContactUs_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/ContactUs_Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,35 +33,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/testdata" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/browsers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\AutomationExercise_Cucumber\browsers" />
       <recent name="C:\Users\admin\IdeaProjects\AutomationExercise_Cucumber\src\test\resources\testdata" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\AutomationExercise_Cucumber\src" />
       <recent name="C:\Users\admin\IdeaProjects\AutomationExercise_Cucumber\src\test\resources\features\uiFeatures" />
       <recent name="C:\Users\admin\IdeaProjects\AutomationExercise_Cucumber\src\test\resources\features" />
       <recent name="C:\Users\admin\IdeaProjects\AutomationExercise_Cucumber\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pojos" />
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="Scenario: Register user with valid credentials (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Register_user.feature" />
-      <option name="GLUE" value="stepdefinitions.uiSteps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+  <component name="RunManager" selected="Cucumber Java.Scenario: Create user">
+    <configuration name="TestRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
       <module name="AutomationExercise_Cucumber" />
-      <option name="NAME_FILTER" value="^Register user with valid credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Register user with valid credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Register user with valid credentials" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,18 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Register user with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/register_user.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="TestRunner (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
       <module name="AutomationExercise_Cucumber" />
-      <option name="NAME_FILTER" value="^Register user with valid credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Register user with valid credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Register user with valid credentials" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,15 +79,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Remove Products From Cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Cart.feature" />
-      <option name="GLUE" value="stepdefinitions.uiSteps hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Demo.feature" />
+      <option name="GLUE" value="stepdefinitions.apiSteps stepdefinitions.uiSteps hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationExercise_Cucumber" />
-      <option name="NAME_FILTER" value="^Remove Products From Cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Remove Products From Cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Remove Products From Cart" />
+      <option name="NAME_FILTER" value="^Create user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create user" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -121,12 +114,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="setupbrowser.deneme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationExercise_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hooks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hooks" />
+      <option name="MAIN_CLASS_NAME" value="hooks.setupbrowser" />
+      <option name="METHOD_NAME" value="deneme" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationExercise_Cucumber" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.TestRunner (1)" />
+      <item itemvalue="Application.TestRunner (3)" />
+      <item itemvalue="Cucumber Java.Scenario: Create user" />
+      <item itemvalue="JUnit.setupbrowser.deneme" />
+      <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="Maven.AutomationExercise_Cucumber" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Create user" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Remove Products From Cart" />
-        <item itemvalue="Cucumber Java.Scenario: Register user with valid credentials (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Register user with valid credentials" />
+        <item itemvalue="Application.TestRunner (1)" />
+        <item itemvalue="JUnit.setupbrowser.deneme" />
+        <item itemvalue="Application.TestRunner (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +180,57 @@
       <option name="presentableId" value="Default" />
       <updated>1661813872263</updated>
     </task>
+    <task id="LOCAL-00001" summary="Api added">
+      <created>1662310760463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662310760463</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Api new test cases">
+      <created>1662450104306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662450104306</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Demo feature added">
+      <created>1663961801980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663961801980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Api added" />
+    <MESSAGE value="Api new test cases" />
+    <MESSAGE value="Demo feature added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo feature added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/runners/TestRunner.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

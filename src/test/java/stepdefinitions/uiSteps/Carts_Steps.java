@@ -27,6 +27,7 @@ public class Carts_Steps {
     String secondProductName;
     int secondProductPrice;
 
+
     @And("Hover over first product and click Add to cart")
     public void hoverOverFirstProductAndClickAddToCart() {
 
@@ -44,6 +45,7 @@ public class Carts_Steps {
     public void clickContinueShoppingButton() {
         Driver.waitAndClick(productsPage.continueShoppingBtn);
         Driver.wait(1);
+
     }
 
     @And("Hover over second product and click Add to cart")
