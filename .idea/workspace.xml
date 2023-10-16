@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585f7dac-e49c-4cfb-b5cd-4ffc6167981f" name="Changes" comment="Demo feature added">
-      <change afterPath="$PROJECT_DIR$/src/browsers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/deneme1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CommonPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CommonPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Login_SignupPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Login_SignupPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/Login_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/Login_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/PlaceOrder_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/PlaceOrder_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/Register_user_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/uiSteps/Register_user_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Cart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/ContactUsForm.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/ContactUsForm.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Demo.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Demo.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/Login.feature" afterDir="false" />
-    </list>
+    <list default="true" id="585f7dac-e49c-4cfb-b5cd-4ffc6167981f" name="Changes" comment="Demo feature added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664237178632</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Demo feature added">
+      <created>1697490897699</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697490897699</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +232,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

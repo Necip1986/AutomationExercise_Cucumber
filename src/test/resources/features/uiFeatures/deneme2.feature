@@ -1,4 +1,4 @@
-Feature: Deneme test
+Feature: Deneme test 2
 
 
   Background: Common steps for login function
@@ -10,7 +10,7 @@ Feature: Deneme test
 
 
   @regression
-  Scenario Outline: Login User with correct email and password
+  Scenario Outline: Login User with correct email and password 2
     Given Enter correct email address and password "<email>" , "<password>"
     And Click login button
     Then Verify that -Logged in as username- is visible
