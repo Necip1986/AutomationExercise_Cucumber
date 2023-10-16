@@ -8,6 +8,7 @@ Feature: Login function
 
 
 
+  @login
   Scenario Outline: Login User with correct email and password
     Given Enter correct email address and password "<email>" , "<password>"
     And Click login button
@@ -19,17 +20,18 @@ Feature: Login function
       | email                  | password |
       | mehmet762946@gmail.com | ahmet    |
       | mehmet1234@gmail.com   | ahmet    |
-      | adnan1234@gmail.com    | adna    |
+      | adnan1234@gmail.com    | adna     |
 
 
 
   Scenario: Login User with incorrect email and password
+
     Given Enter incorrect email address and password
     And Click login button
     Then  Verify error -Your email or password is incorrect!- is visible
     And Close driver
 
-  @login
+
   Scenario: Login User with correct email and password
     Given Enter correct email address and password
     And Click login button

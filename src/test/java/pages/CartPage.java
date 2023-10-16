@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -19,6 +20,11 @@ public class CartPage extends CommonPageElements{
     @CacheLookup
     @FindBy(xpath = "//footer[@id='footer']//h2")
     public WebElement subscriptionHeader;
+
+    public static void main(String[] args) {
+        WebElement message=Driver.getDriver().findElement(By.xpath("//div[@class='alert-success alert']"));
+
+    }
 
     @CacheLookup
     @FindBy (id = "susbscribe_email")

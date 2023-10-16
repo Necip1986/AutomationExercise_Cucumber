@@ -1,3 +1,4 @@
+@regression
 Feature: Cart Function
 
   Background: common steps for place order

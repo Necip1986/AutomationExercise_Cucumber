@@ -10,6 +10,9 @@ import pages.Login_SignupPage;
 import pages.SignUpPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class Login_Steps {
 
@@ -23,9 +26,11 @@ public class Login_Steps {
     }
 
     @Given("Enter correct email address and password {string} , {string}")
-    public void enterCorrectEmailAddressAndPassword(String email, String password) {
+    public void enterCorrectEmailAddressAndPassword(String email, String password) throws IOException {
         Driver.waitAndSendText(login_signupPage.emailTextBoxForLogin, email,2);
         Driver.waitAndSendText(login_signupPage.passwordTextBox, password,2);
+        ReusableMethods.getScreenshot("take");
+
 
     }
 

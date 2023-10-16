@@ -23,7 +23,7 @@ public class Login_SignupPage extends CommonPageElements {
     public WebElement newUserSignUpHeader;
 
     @CacheLookup
-    @FindBy (xpath = "//input[@data-qa='login-email']")
+    @FindBy (xpath = "//input[@data-qa='login-emai']")
     public WebElement emailTextBoxForLogin;
 
     @CacheLookup

@@ -40,7 +40,8 @@ public abstract class Driver {
         if(driver==null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\browser\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver",
+                            "C:\\Users\\admin\\IdeaProjects\\AutomationExercise_Cucumber\\src\\browsers\\chromedriver.exe");
                     //WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;

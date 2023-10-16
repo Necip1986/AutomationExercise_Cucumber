@@ -21,6 +21,10 @@ public class CommonPageElements {
     @FindBy(xpath = "//div[@class=\"logo pull-left\"]")
     public WebElement logo;
 
+    @FindBy (xpath = "(//input[@name='email'])[2]")
+    public WebElement signUpEmailBox;
+
+
     @CacheLookup
     @FindBy(xpath = "//i[@class='fa fa-user']")
     public WebElement loggedInExpression;

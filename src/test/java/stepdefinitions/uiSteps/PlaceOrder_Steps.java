@@ -21,7 +21,7 @@ public class PlaceOrder_Steps {
 
     @When("Add products to cart")
     public void addProductsToCart() {
-        Driver.waitAndClick(homePage.addToCartProductList.get(0),3);
+        Driver.waitAndClick(homePage.addToCartProductList.get(1),3);
     }
 
     @Then("Verify that cart page is displayed")

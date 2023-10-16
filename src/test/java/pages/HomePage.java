@@ -15,7 +15,7 @@ public class HomePage extends CommonPageElements{
     }
 
     @CacheLookup
-    @FindBy(xpath = "//div[@class='productinfo text-center']//a[@class='btn btn-default add-to-cart']")
+    @FindBy(xpath = "//div[@class='productinfo text-cente']//a[@class='btn btn-default add-to-cart']")
     public List<WebElement> addToCartProductList;
 
     @CacheLookup

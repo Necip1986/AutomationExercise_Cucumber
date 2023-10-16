@@ -1,11 +1,11 @@
 package runners;
 
-import hooks.StaticWork;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.junit.Test;
 import org.junit.runner.RunWith;
-import stepdefinitions.uiSteps.Carts_Steps;
+import utilities.ExcelUt;
+
+import java.io.IOException;
 
 
 @RunWith(Cucumber.class)
@@ -19,14 +19,22 @@ import stepdefinitions.uiSteps.Carts_Steps;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
                // "de.monochromata.cucumber.report.PrettyReports:target/cucumber"
         },
+        tags = "@JobApplication",
         features = "./src/test/resources/features",//MUST
         glue = {"stepdefinitions","hooks"}, //MUST
-        tags = " @Demo",
-        dryRun = false,
-        monochrome = true
-
+        dryRun=false
 )
+
+
 public class TestRunner {
+
+        public static void main(String[] args) throws IOException {
+                String path="src\\test\\resources\\testdata\\DATA.xls";
+                ExcelUt excelUt = new ExcelUt(path);
+                System.out.println(excelUt.getColumnNames("Sheet8"));
+                System.out.println(excelUt.getExcelDataList("Sheet8","dd/MM/yyyy"));
+        }
+
 
 
         

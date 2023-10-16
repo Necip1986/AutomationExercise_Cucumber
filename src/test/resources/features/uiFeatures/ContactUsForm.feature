@@ -1,6 +1,7 @@
+@regression
 Feature: Contact Us Form function
 
-  @contactUs
+  @contact
   Scenario: filling and submission of contact us form
     When Navigate to url 'http://automationexercise.com'
     Then Verify that home page is visible successfully
